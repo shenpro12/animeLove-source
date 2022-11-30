@@ -1,0 +1,8 @@
+.watchedContainer {
+  margin-right: 15px;
+}
+@media (max-width: 915px) {
+  .watchedContainer {
+    margin-right: 0px;
+  }
+}

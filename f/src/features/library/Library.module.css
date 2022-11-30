@@ -1,0 +1,29 @@
+.libraryPage_container {
+  margin-top: 100px;
+  width: 1142px;
+  min-height: 700px;
+  background-color: black;
+  margin: -10px auto 13px auto;
+  padding: 15px;
+  border-radius: 3px;
+  color: white;
+}
+@media (max-width: 1160px) {
+  .libraryPage_container {
+    width: 96% !important;
+  }
+}
+@media (max-width: 1040px) {
+  .libraryPage_container {
+    margin: -10px auto 13px auto !important;
+  }
+}
+@media (max-width: 915px) {
+  .libraryPage_container {
+    width: 100% !important;
+    margin: -10px auto 5px auto !important;
+  }
+  .type {
+    display: none !important;
+  }
+}

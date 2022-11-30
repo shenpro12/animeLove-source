@@ -1,0 +1,26 @@
+.calendarPage_container {
+  margin-top: 100px;
+  width: 1142px;
+  height: 1500px;
+  background-color: black;
+  margin: 13px auto;
+  padding: 15px;
+  border-radius: 3px;
+  color: white;
+}
+@media (max-width: 1160px) {
+  .calendarPage_container {
+    width: 96% !important;
+  }
+}
+@media (max-width: 1040px) {
+  .calendarPage_container {
+    margin: 65px auto !important;
+  }
+}
+@media (max-width: 915px) {
+  .calendarPage_container {
+    width: 100% !important;
+    margin: 5px auto !important;
+  }
+}

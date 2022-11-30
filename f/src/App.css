@@ -1,0 +1,27 @@
+.banner {
+  width: 1142px;
+  background-color: black;
+  margin: 13px auto 0px auto;
+  padding: 15px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  transition: 0.5s ease;
+}
+@media (max-width: 1160px) {
+  .banner {
+    width: 96% !important;
+  }
+}
+@media (max-width: 1040px) {
+  .banner {
+    margin: 65px auto 0px auto !important;
+  }
+}
+@media (max-width: 915px) {
+  .banner {
+    width: 100% !important;
+    margin: 5px auto !important;
+    flex-direction: column;
+  }
+}

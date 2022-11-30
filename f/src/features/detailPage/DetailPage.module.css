@@ -1,0 +1,132 @@
+.detailPage_container {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.flex_col_reverse {
+  flex-direction: column-reverse !important;
+  justify-content: flex-end !important;
+}
+.banner_container {
+  width: 100%;
+  max-height: max-content;
+  min-height: 300px;
+  padding: 20px 15px;
+  display: flex;
+  position: relative;
+  border-radius: 3px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.headerImage {
+  border-radius: 3px;
+}
+.description {
+  max-height: 150px;
+  overflow: auto;
+  margin-top: 10px;
+  padding: 10px;
+  color: rgba(217, 232, 254, 0.605);
+  font-weight: 500;
+}
+.description::-webkit-scrollbar {
+  width: 5px;
+}
+.description::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 58, 51, 0.6);
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+.headerImageContainer {
+  z-index: 10;
+  position: relative;
+}
+@media (max-width: 915px) {
+  .detailPage_container {
+    width: 100%;
+  }
+  .slider {
+    margin-right: 0px !important;
+  }
+}
+@media (max-width: 600px) {
+  .banner_container {
+    flex-direction: column;
+  }
+  .headerImage,
+  .headerImageOverlay {
+    margin: auto;
+  }
+  .headerImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+.imageContainer {
+  height: 254.19px;
+  width: 180px;
+  overflow: hidden;
+}
+.imageContainer > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.detailContent_container {
+  width: 100%;
+  height: min-content;
+  background-color: rgb(26, 31, 35);
+  padding: 5px;
+  min-height: 410px;
+  position: relative;
+  border-radius: 5px;
+}
+.imagedirectoty {
+  max-height: 400px;
+}
+.trailer,
+.imagedirectoty {
+  overflow: hidden;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.active {
+  height: 400px !important;
+  opacity: 1 !important;
+  word-break: break-all;
+}
+.info {
+  transition: 0.5s ease;
+  opacity: 0.5;
+  overflow: auto;
+}
+.info::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 765px) {
+  .optionText {
+    width: 0px;
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+  }
+}
+.optionTextActive {
+  width: max-content !important;
+  height: max-content !important;
+  position: relative;
+}
+.starActive {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity)) !important;
+}
+.starContainer {
+  min-height: 60px;
+}

@@ -1,0 +1,22 @@
+.footer_container {
+  width: 1142px;
+  height: 60px;
+  background-color: black;
+  margin: 20px auto 15px auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1160px) {
+  .footer_container {
+    width: 96% !important;
+  }
+}
+
+@media (max-width: 915px) {
+  .footer_container {
+    width: 100% !important;
+    margin: 5px auto !important;
+  }
+}

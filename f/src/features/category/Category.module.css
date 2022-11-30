@@ -1,0 +1,6 @@
+@media (max-width: 915px) {
+  .category_container,
+  .filter_container {
+    margin-right: 0px !important;
+  }
+}

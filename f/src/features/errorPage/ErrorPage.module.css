@@ -1,0 +1,16 @@
+.errorPage_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+}
+.errorPage_container > h1 {
+  font-size: 80px;
+  color: red;
+  font-weight: 700;
+}
+.errorPage_container > p {
+  font-size: 20px;
+}

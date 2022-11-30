@@ -1,0 +1,300 @@
+.header_item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.header_item li {
+  margin: auto 0px;
+  padding: 0px 20px;
+  color: white;
+  font-weight: 600;
+  height: 100%;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.1s ease;
+}
+.header_item > li {
+  margin: 0px 0px !important;
+  height: 60px !important;
+  line-height: 60px !important;
+}
+.header_item li:hover {
+  cursor: pointer;
+  color: #b5e745;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 915px) {
+  .header_item > li:hover > .dropBox_container {
+    display: grid !important;
+    height: auto;
+    padding: 8px 5px;
+    border-top: 3px solid #b5e745;
+    border-radius: 5px;
+    overflow: auto;
+    opacity: 1;
+  }
+  .header_item > li:hover > .dropBox_Arrow {
+    display: block !important;
+  }
+}
+.header_container {
+  display: flex;
+  background-color: black;
+  height: 60px;
+}
+.header_container > div {
+  display: flex;
+}
+.header_container > div > div {
+  padding: 0px 10px;
+  display: flex;
+  height: 40px;
+  width: 230px;
+  border-radius: 5px;
+  background-color: rgb(77, 77, 77);
+  border: 2px solid rgba(154, 154, 154, 0.619);
+  margin: auto 120px auto 0px;
+}
+.header_container > div > div:focus-within {
+  border: 2px solid blue;
+}
+.header_container > div > div > input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+}
+.login_btn,
+.login_container {
+  padding: 0px 15px;
+  background-color: red;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 40px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.login_container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+}
+.header_container > div > a > p:hover,
+.bars_icon:hover {
+  cursor: pointer;
+  background-color: rgba(255, 65, 65, 0.3);
+}
+.header_container > a > img {
+  width: 55px;
+  height: 55px;
+  margin: auto 0px auto 30px;
+  transition: 0.5s ease;
+}
+.header_container > a {
+  display: flex;
+}
+.header_container > a > img:hover {
+  cursor: pointer;
+}
+.down_icon {
+  color: #b5e745;
+  margin-left: 5px;
+  font-size: 16px;
+}
+.bars_icon {
+  display: none;
+  padding: 10px 15px;
+  background-color: red;
+  border-radius: 5px;
+  margin: auto 10px;
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  z-index: 40;
+  width: 15px;
+}
+.dropBox_container {
+  width: 400px;
+  max-height: 200px;
+  padding: 0px;
+  max-width: 400px;
+  border: 0px;
+  background-color: white;
+  position: absolute;
+  margin-top: -5px;
+  overflow: hidden;
+  height: 0px;
+  transition: 0.2s ease;
+  opacity: 0;
+  z-index: 40;
+}
+.dropBox_container:hover {
+  cursor: default;
+}
+.dropBox_container::-webkit-scrollbar {
+  width: 6px;
+}
+.dropBox_container::-webkit-scrollbar-thumb {
+  background-color: rgba(251, 41, 33, 0.7);
+  border-radius: 5px;
+}
+.dropBox_Arrow {
+  display: none !important;
+  width: 10px;
+  height: 10px;
+  background-color: #b5e745;
+  position: absolute;
+  margin-top: -10px;
+}
+.header_type {
+  color: #333;
+  text-transform: none;
+  font-weight: 700;
+  padding: 20px 10px;
+  font-size: 13px;
+  margin: 4px;
+  line-height: 0px;
+  text-align: left;
+  width: max-content;
+}
+.header_type:hover {
+  color: #b5e745;
+  cursor: pointer;
+}
+.header_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.837);
+  z-index: -1;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+@media (max-width: 1040px) {
+  .header_item {
+    position: absolute;
+    margin-top: 58px;
+    background-color: black;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .header_container {
+    justify-content: space-between;
+  }
+  .login_btn,
+  .login_container {
+    margin-top: -58px;
+  }
+}
+@media (max-width: 915px) {
+  .hoverTransparent:hover {
+    background-color: transparent !important;
+  }
+  .header_container > a > img {
+    margin: auto 0px auto 10px;
+  }
+  .loginOption {
+    width: 100% !important;
+    right: 0px !important;
+    top: 2.5rem !important;
+  }
+  .login_btn,
+  .login_container {
+    margin-top: 0px;
+    width: 92%;
+    text-align: center;
+  }
+  .disable_click {
+    pointer-events: none !important;
+  }
+  .navbar_active {
+    margin-left: 0px !important;
+  }
+  .dropBox_active {
+    height: 200px;
+    overflow: auto;
+  }
+  .overlay_active {
+    opacity: 1;
+    z-index: 39;
+  }
+  .header_container > div > div {
+    margin: auto 0px auto 0px;
+  }
+  .bars_icon {
+    display: block !important;
+  }
+  .header_container {
+    justify-content: space-between;
+  }
+  .header_item {
+    height: 100vh;
+    position: fixed;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: start;
+    width: 270px;
+    padding-top: 70px;
+    background-color: rgba(16, 16, 16, 0.837);
+    border-right: 1px solid rgb(34, 34, 34);
+    margin-left: -271px;
+    z-index: 40;
+    overflow: scroll;
+  }
+  .header_item::-webkit-scrollbar {
+    display: none;
+  }
+  .header_item > li {
+    line-height: 0px;
+    height: max-content !important;
+    margin: 15px 0px;
+  }
+  .dropBox_container {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 0px;
+    border-top: 0px;
+    background-color: rgba(161, 161, 161, 0.3);
+    max-height: 300px;
+    text-align: center;
+    opacity: 1;
+  }
+  .dropBox_container p {
+    color: white;
+    display: inline-block;
+  }
+}
+@media (max-width: 500px) {
+  .header_container > div {
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+.loginOption {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  border-radius: 5px;
+  position: absolute;
+  right: 1.25rem;
+  top: 2.75rem;
+  z-index: 50;
+  color: rgb(255 255 255 / 0.7);
+  transition-duration: 300ms;
+}
+.loginOption:hover {
+  cursor: default;
+}

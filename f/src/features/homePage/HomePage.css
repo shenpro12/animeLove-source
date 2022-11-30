@@ -1,0 +1,33 @@
+.swiper-pagination-bullet-active {
+  background: rgb(167, 4, 4) !important;
+}
+.sliderItemContent {
+  width: 450px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-left: -1px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.5s ease;
+}
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1;
+}
+@media (max-width: 600px) {
+  .sliderItemContent {
+    width: 100%;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+  }
+}

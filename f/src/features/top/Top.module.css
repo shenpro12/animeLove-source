@@ -1,0 +1,10 @@
+.topPage_container {
+  flex: 1;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 915px) {
+  .topPage_container {
+    margin-right: 0px !important;
+  }
+}

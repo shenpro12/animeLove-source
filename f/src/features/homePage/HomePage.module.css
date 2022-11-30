@@ -1,0 +1,86 @@
+.homePage_container {
+  flex: 1;
+  margin-right: 15px;
+}
+@media (max-width: 915px) {
+  .homePage_container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .tooltip {
+    display: none !important;
+  }
+}
+.item {
+  padding-top: 120%;
+  background-color: transparent;
+  position: relative;
+  border-radius: 3px;
+}
+.tooltip {
+  width: 230px;
+  height: 0px;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 850%;
+  z-index: 10;
+  pointer-events: none;
+  border-left: 5px solid #b5e745;
+}
+.tooltip > div {
+  margin-left: -3%;
+}
+.tooltip > .tooltipContent {
+  background-color: white;
+  border-radius: 3px;
+  flex: 1;
+  height: 105%;
+  z-index: 10;
+  padding: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.textLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.tooltip_wrap:hover div .tooltip {
+  height: 270px;
+}
+.tooltip_wrap {
+  z-index: 11;
+  height: 100%;
+}
+.episode {
+  margin: -115% 5px 0px 0px;
+}
+.episodeText {
+  font-size: 10px;
+  line-height: 3px;
+}
+.text_active {
+  color: red !important;
+  font-weight: 600 !important;
+}
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  color: rgb(157, 177, 187);
+  margin-top: 10px;
+}
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

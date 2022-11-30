@@ -1,0 +1,37 @@
+.loading_container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s linear;
+}
+.requestLoading_container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #182023f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+.opacity_none {
+  opacity: 0;
+}
+.zIndex_1 {
+  z-index: -1;
+}
+.headerText {
+  background: linear-gradient(90deg, #ff0000 0%, #22ff00 50%, #0095ff 100%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  filter: drop-shadow(3px 3px 3px rgb(126, 126, 126));
+}
